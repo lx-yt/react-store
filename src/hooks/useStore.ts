@@ -1,3 +1,5 @@
+import React from "react";
+
 export type Listener = () => void;
 
 type Factory<T> = () => T;
@@ -63,4 +65,10 @@ export function createStore<T>(initialValue: ValueOrFactory<T>): Store<T> {
     subscribe,
     setValue,
   };
+}
+
+export function useStore<T>(store: Store<T>): [T, SetterOrUpdater<T>] {
+  const value = React.useSyncExternalStore(store.subscribe, store.getSnapshot);
+
+  return React.useMemo(() => [value, store.setValue], [value, store.setValue]);
 }
