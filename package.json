@@ -1,19 +1,19 @@
 {
-  "name": "@lexyth/package-template-react",
+  "name": "@lx-yt/react-store",
   "version": "0.0.0",
-  "description": "A template for npm packages with React, Tailwind, TypeScript, Vite, and ESLint already set up.",
+  "description": "This package provides utilities that allow React Components and Hooks to interact and stay in sync with external data.",
   "keywords": [
-    "template",
     "react",
-    "tailwind",
     "typescript",
-    "vite",
-    "eslint"
+    "hooks",
+    "state",
+    "data",
+    "store"
   ],
   "author": "Lexyth",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lexyth/package-template-react.git"
+    "url": "git+https://github.com/lx-yt/react-store.git"
   },
   "license": "MIT",
   "type": "module",

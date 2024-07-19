@@ -1,3 +1,3 @@
-# React + Tailwind + TypeScript + Vite + ESLint
+# React Store
 
-A template for npm packages with React, Tailwind, TypeScript, Vite, and ESLint already set up.
+This package provides utilities that allow React Components and Hooks to interact and stay in sync with external data.

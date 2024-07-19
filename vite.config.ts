@@ -12,7 +12,7 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: "src/index.ts",
-      name: "Template-React",
+      name: "React-Store",
       fileName: "index",
       formats: ["es"],
     },
