@@ -4,12 +4,4 @@ import { defineConfig, mergeConfig } from "vite";
 import baseConfig from "./node_modules/@lx-yt/vite-config-default/vite.config";
 import reactConfig from "./node_modules/@lx-yt/vite-config-default/vite.config.react";
 
-export default defineConfig(
-  mergeConfig(mergeConfig(baseConfig, reactConfig), {
-    build: {
-      lib: {
-        name: "React-Store",
-      },
-    },
-  })
-);
+export default defineConfig(mergeConfig(baseConfig, reactConfig));
